@@ -1,0 +1,31 @@
+!!!
+html
+  head
+    link(href="http://fonts.googleapis.com/css?family=Patrick+Hand+SC", rel="stylesheet", type="text/css")
+    link(href="/css/bootstrap.min.css", rel="stylesheet", type="text/css")
+    link(href="/css/style.css", rel="stylesheet", type="text/css")
+  body
+    header#main-header
+      .gx-top-line
+      .gx-nav
+        .container
+          h1.brand: a(href="/") Giterxise
+    #main-content.container
+        .tabbable.tabs-left
+          ul.nav.nav-tabs
+            li: a(href="#tab1", data-toggle="tab") Exercise 1
+            li: a(href="#tab2", data-toggle="tab") Exercise 2
+            li: a(href="#tab3", data-toggle="tab") Exercise 3
+          .tab-content
+            #tab1.tab-pane
+              p hello world
+            #tab2.tab-pane
+              p aha
+        .misc
+          span &copy; Welly
+          span.pull-right powered by
+            a(href="http://nodejs.org")  node.js
+
+    script(src="//code.jquery.com/jquery-1.9.1.min.js", type="text/javascript")
+    script(src="/js/bootstrap.min.js", type="text/javascript")
+

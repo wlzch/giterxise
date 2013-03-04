@@ -1,0 +1,47 @@
+body {
+  background-color: #F0EFED;
+}
+
+.gx-top-line {
+  height: 5px;
+  background-color: #000;
+}
+
+.gx-nav {
+  background: rgb(167,199,220); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(167,199,220,1) 0%, rgba(133,178,211,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(167,199,220,1)), color-stop(100%,rgba(133,178,211,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7c7dc', endColorstr='#85b2d3',GradientType=0 ); /* IE6-9 */
+}
+
+.brand {
+  font-size: 3em;
+}
+
+.brand a {
+  color: #E34949;
+  text-decoration: none;
+  font-family: "Patrick Hand SC", cursive;
+}
+
+#main-content {
+  padding: 20px 20px 5px 20px;
+  background-color: #FFF;
+}
+
+.misc {
+  font-size: 0.875em;
+  color: #8A8A8A;
+}
+
+.misc span {
+  margin-right: 20px;
+}
+
+.misc a {
+  text-decoration: none;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "giterxise",
+  "version": "0.0.1",
+  "author": "wlzch",
+  "description": "Exercise for git workshop",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wlzch/giterxise.git"
+  },
+  "dependencies": {
+    "express": "3.0.x",
+    "async": "0.2.x",
+    "mongoose": "3.5.x",
+    "underscore": "1.4.x",
+    "connect-flash": "0.1.x",
+    "jade": "0.27.x",
+    "js-yaml": "*"
+  },
+  "engine": {
+    "node": "0.8.x"
+  },
+  "private": true
+}
