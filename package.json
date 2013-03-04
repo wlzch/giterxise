@@ -13,11 +13,11 @@
     "mongoose": "3.5.x",
     "underscore": "1.4.x",
     "connect-flash": "0.1.x",
-    "jade": "0.27.x",
-    "js-yaml": "*"
+    "jade": "0.27.x"
   },
-  "engine": {
-    "node": "0.8.x"
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
   },
   "private": true
 }
