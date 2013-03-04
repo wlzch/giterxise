@@ -4,6 +4,7 @@ var
   app = express(),
   controller = require('./controller')
 ;
+var port = process.env.PORT || 80;
 
 if ('development' == app.get('env')) {
   app.use(express.errorHandler({
@@ -38,4 +39,4 @@ app.configure(function() {
 
 app.get('/', controller.index);
 
-app.listen(80);
+app.listen(port);
