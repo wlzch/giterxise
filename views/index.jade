@@ -6,6 +6,13 @@ block append content
         each exerciseNumber in exerciseNumbers
             li: a(href="#tab#{exerciseNumber}", data-toggle="tab") Exercise #{exerciseNumber}
       .tab-content
+        - var i = 1;
+        - var len = Object.keys(exercises).length;
         each exercise, id in exercises
-            div.tab-pane(id="#{id}")
-                !{exercise}
+            if i == len
+                div.active.tab-pane(id="#{id}")
+                    !{exercise}
+            else
+                div.tab-pane(id="#{id}")
+                    !{exercise}
+            - i++;
