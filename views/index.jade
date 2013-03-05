@@ -3,16 +3,22 @@ extends layout
 block append content
     .tabbable.tabs-left
       ul.nav.nav-tabs
-        each exerciseNumber in exerciseNumbers
-            li: a(href="#tab#{exerciseNumber}", data-toggle="tab") Exercise #{exerciseNumber}
+        each exerciseNumber, j in exerciseNumbers
+            if j == exerciseNumbers.length - 1
+                li.active: a(href="#tab#{exerciseNumber}", data-toggle="tab") Exercise #{exerciseNumber}
+            else
+                li: a(href="#tab#{exerciseNumber}", data-toggle="tab") Exercise #{exerciseNumber}
+
       .tab-content
         - var i = 1;
         - var len = Object.keys(exercises).length;
         each exercise, id in exercises
             if i == len
                 div.active.tab-pane(id="#{id}")
-                    !{exercise}
+                    .exercise
+                        !{exercise}
             else
                 div.tab-pane(id="#{id}")
-                    !{exercise}
+                    .exercise
+                        !{exercise}
             - i++;
