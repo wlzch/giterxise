@@ -1,0 +1,64 @@
+h3 Diff dan Log
+ol.steps
+    li Ubahlah .gx-nav pada style.css dengan kode sebagai berikut
+        pre.cssCode.
+          background: rgb(167,199,220); /* Old browsers */
+          background: -moz-linear-gradient(top,  rgba(167,199,220,1) 0%, rgba(133,178,211,1) 100%); /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(167,199,220,1)), color-stop(100%,rgba(133,178,211,1))); /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(top,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%); /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(top,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%); /* Opera 11.10+ */
+          background: -ms-linear-gradient(top,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%); /* IE10+ */
+          background: linear-gradient(to bottom,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%); /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7c7dc', endColorstr='#85b2d3',GradientType=0 ); /* IE6-9 */
+
+    li Lihat perubahan (diff) yang terjadi pada file style.css
+    li Commit dengan pesan "Membuat gradient pada navigasi"
+    li Lihat log-log commit yang pernah dilakukan
+    li Tampilkan log dengan format-format berikut
+        pre.
+            70b2ac5851f373c1cd02289f69b74898f19d2e8f Membuat gradient pada navigasi.
+            f2382699415694135269f1f3f68a519109f24ca4 Menambahkan gitignore.
+            ce1f1d56d455f815424e3e16d3c6c87b17f97371 Menghapus TODO
+            3edb2f49e3c78bd895ad221becc6bff23114edaf Menambah TODO.
+            9fa4d52d1c28338afe8f18ef735baaf5a8551671 Pindah css ke external file.
+            5e379714da767ee9e5ab1f0caee456f381229fd9 Membuat header.
+        pre.
+            70b2ac5 Membuat gradient pada navigasi.
+            f238269 Menambahkan gitignore.
+            ce1f1d5 Menghapus TODO
+            3edb2f4 Menambah TODO.
+            9fa4d52 Pindah css ke external file.
+            5e37971 Membuat header.
+    li Tampilkan log yang dicommit 30 menit yang lalu
+        pre.
+            commit 70b2ac5851f373c1cd02289f69b74898f19d2e8f
+            Author: wlzch <wilzichi92@gmail.com>
+            Date:   Tue Mar 5 23:22:00 2013 +0700
+
+                Membuat gradient pada navigasi.
+
+            commit f2382699415694135269f1f3f68a519109f24ca4
+            Author: wlzch <wilzichi92@gmail.com>
+            Date:   Tue Mar 5 23:21:43 2013 +0700
+
+                Menambahkan gitignore.
+    li Tampilkan log yang message commitnya mengandung kata "gitignore"
+        pre.
+            commit f2382699415694135269f1f3f68a519109f24ca4
+            Author: wlzch <wilzichi92@gmail.com>
+            Date:   Tue Mar 5 23:21:43 2013 +0700
+
+                Menambahkan gitignore.
+    li Tampilkan hanya 2 commit terakhir
+        pre.
+            commit 70b2ac5851f373c1cd02289f69b74898f19d2e8f
+            Author: wlzch <wilzichi92@gmail.com>
+            Date:   Tue Mar 5 23:22:00 2013 +0700
+
+                Membuat gradient pada navigasi.
+
+            commit f2382699415694135269f1f3f68a519109f24ca4
+            Author: wlzch <wilzichi92@gmail.com>
+            Date:   Tue Mar 5 23:21:43 2013 +0700
+
+                Menambahkan gitignore.
