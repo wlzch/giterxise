@@ -1,0 +1,31 @@
+h3 Branching, Merging dan Undoing
+
+ol.steps
+    li Anda akan menambahkan content pada index.html tetapi karena anda tidak mau nantinya mengacaukan index.html yang ada sekarang, anda membuat sebuah branch baru bernama "tambah-content-index"
+    li Lihat list branch di repository anda dan pastikan anda berada pada branch "tambah-content-index"
+    li Tambahkan kode berikut pada file index.html dibawah header
+        pre.htmlCode.
+            <div id="main-content" class="container">
+                <div class="hero-unit">
+                    <h1>Giterxise</h1>
+                    <p>Giterxise adalah situs yang berisi latihan-latihan agar anda lebih memahami git</p>
+                    <p>
+                        <a href="http://giterxise.herokuapp.com" class="btn btn-primary btn-large">Coba</a>
+                    </p>
+                </div>
+            </div>
+    li Ubah background pada body menjadi warna putih
+        pre.cssCode.
+            body {
+                background-color: #FFF;
+            }
+    li Commit dengan pesan "Menambahkan content pada index."
+    li Setelah anda mencoba perubahan, anda menyadari bahwa content memerlukan margin atas untuk terlihat bagus, kemudian anda menambahkan kode berikut ke style.css
+        pre.cssCode.
+            #main-content {
+                margin-top: 20px;
+            }
+    li Karena perubahannya sangat sedikit dan berhubungan dengan commit sebelumnya, jadi anda mengubah commit sebelumnya untuk menambahkan kode diatas
+    li Anda telah menambahkan content pada halaman utama, anda kembali ke branch "master" lalu melakukan merge terhadap branch "tambah-content-index"
+    li Merasa fungsi dari "tambah-content-index" tidak ada lagi, anda memutuskan untuk menghapus branch tersebut
+    li Lihatlah log commit anda
