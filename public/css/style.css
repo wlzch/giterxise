@@ -45,3 +45,14 @@ body {
 .misc a {
   text-decoration: none;
 }
+
+.login-form {
+  margin: 50px auto;
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+}
+
+.login-form input {
+  margin-left: 45px;
+}

@@ -1,0 +1,8 @@
+extends layout
+
+block append content
+  form.login-form(action="/login", method="post")
+    legend Enter Access Code
+    label(for="code") code
+      input(type="password", name="code", id="code")
+    input.pull-right(type="submit", value="Submit")

@@ -33,10 +33,28 @@ app.configure(function() {
     }
   }));
   app.use(flash());
+  app.use(function(req, res, next) {
+    req.isAuthenticated = function() {
+      return req.session.authenticated === true;
+    }
+    next();
+  });
   app.use(app.router);
 });
 
+var requiresAuth = function(req, res, next) {
+  if (req.isAuthenticated()) {
+    next();
+  } else {
+    res.redirect('/login');
+  }
+}
+
 
 app.get('/', controller.index);
+app.get('/login', controller.login);
+app.post('/login', controller.loginCheck);
+app.get('/admin', requiresAuth, controller.admin);
+app.post('/admin', requiresAuth, controller.adminCheck);
 
 app.listen(port);
