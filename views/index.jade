@@ -13,14 +13,12 @@ html
     #main-content.container
         .tabbable.tabs-left
           ul.nav.nav-tabs
-            li: a(href="#tab1", data-toggle="tab") Exercise 1
-            li: a(href="#tab2", data-toggle="tab") Exercise 2
-            li: a(href="#tab3", data-toggle="tab") Exercise 3
+            each exerciseNumber in exerciseNumbers
+                li: a(href="#tab#{exerciseNumber}", data-toggle="tab") Exercise #{exerciseNumber}
           .tab-content
-            #tab1.tab-pane
-              p hello world
-            #tab2.tab-pane
-              p aha
+            each exercise, id in exercises
+                div.tab-pane(id="#{id}")
+                    !{exercise}
         .misc
           span &copy; Welly
           span.pull-right powered by
