@@ -1,2 +1,4 @@
 number_of_exercises: 2
-exercises: '1'
+exercises:
+  - '1'
+  - '2'

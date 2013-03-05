@@ -29,7 +29,7 @@ app.configure(function() {
   app.use(express.session({
     key: 'sid',
     cookie: {
-      maxAge: 60000
+      maxAge: 864000
     }
   }));
   app.use(flash());
