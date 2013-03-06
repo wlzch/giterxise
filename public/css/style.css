@@ -65,7 +65,7 @@ body {
 
 .steps > li {
     padding: 10px;
-    background: rgb(238,238,238); /* Old browsers */
+    background: #999;
     background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(238,238,238,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(238,238,238,1))); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(238,238,238,1) 100%); /* Chrome10+,Safari5.1+ */
@@ -77,9 +77,36 @@ body {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    font-size: 1.1em;
+    font-size: 1.25em;
 }
 
-p.note {
-    color: red;
+.steps li.commit {
+    background: #468847;
+    color: white;
+}
+
+.steps li.code {
+    background: #333;
+    color: white;
+}
+
+.steps pre {
+    margin-top: 10px;
+}
+
+.note {
+    padding: 10px;
+    background-color: #B94A48;
+    color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.note a {
+    color: #5ADEED;
+}
+
+.note a:hover {
+    color: #42ACB8;
 }

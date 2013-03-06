@@ -3,7 +3,7 @@ h3 Branching, Merging dan Undoing
 ol.steps
     li Anda akan menambahkan content pada index.html tetapi karena anda tidak mau nantinya mengacaukan index.html yang ada sekarang, anda membuat sebuah branch baru bernama "tambah-content-index"
     li Lihat list branch di repository anda dan pastikan anda berada pada branch "tambah-content-index"
-    li Tambahkan kode berikut pada file index.html dibawah header
+    li.code Tambahkan kode berikut pada file index.html dibawah header
         pre.htmlCode.
             <div id="main-content" class="container">
                 <div class="hero-unit">
@@ -14,13 +14,13 @@ ol.steps
                     </p>
                 </div>
             </div>
-    li Ubah background pada body menjadi warna putih
+    li.code Ubah background pada body menjadi warna putih
         pre.cssCode.
             body {
                 background-color: #FFF;
             }
-    li Commit dengan pesan "Menambahkan content pada index."
-    li Setelah anda mencoba perubahan, anda menyadari bahwa content memerlukan margin atas untuk terlihat bagus, kemudian anda menambahkan kode berikut ke style.css
+    li.commit Commit dengan pesan "Menambahkan content pada index."
+    li.code Setelah anda mencoba perubahan, anda menyadari bahwa content memerlukan margin atas untuk terlihat bagus, kemudian anda menambahkan kode berikut ke style.css
         pre.cssCode.
             #main-content {
                 margin-top: 20px;
